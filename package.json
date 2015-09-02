@@ -12,12 +12,13 @@
   ],
   "scripts": {
     "lint": "eslint lib && jscs lib",
-    "start": "iojs lib/app.js"
+    "start": "forever start lib/app.js -l forever.log --append --watch"
   },
   "dependencies": {
     "child-process-promise": "^1.1.0",
     "co-multipart": "^0.2.0",
     "finished": "^1.2.2",
+    "forever": "^0.15.1",
     "koa": "^1.0.0",
     "mkdirp-then": "^1.1.0",
     "rimraf-then": "^1.0.0"
