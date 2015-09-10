@@ -22,12 +22,6 @@ The result will be a ZIP file containing the output of Wattsi!
 
 (NOTE: if you get an error, the resulting zip file will actually be a text file containing that error. Does anyone know a better CURL command that would output to stderr or similar in that case?)
 
-## Future Work
-
-- Download caniuse/w3cbugs for you, perhaps with local caches on the server.
-- Get a real host name with HTTPS.
-- Integrate into [whatwg/html-build](https://github.com/whatwg/html-build) so that you can run those scripts without Wattsi.
-
 ## Server Development Info
 
 This server requires the following to run:
