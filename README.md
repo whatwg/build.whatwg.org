@@ -11,16 +11,16 @@ Currently it is located on an AWS server. You can use it as follows:
 1. Run the following command:
 
    ```sh
-   curl http://ec2-52-88-42-163.us-west-2.compute.amazonaws.com -f -v \
-        -F source=@source \
-        -F caniuse=@caniuse.json \
-        -F w3cbugs=@w3cbugs.csv \
-        > output.zip
+   curl http://ec2-52-88-42-163.us-west-2.compute.amazonaws.com --verbose \
+        --form source=@source \
+        --form caniuse=@caniuse.json \
+        --form w3cbugs=@w3cbugs.csv \
+        --output output.zip
    ```
 
 The result will be a ZIP file containing the output of Wattsi!
 
-(NOTE: if you get an error, the resulting zip file will actually be a text file containing that error. Does anyone know a better CURL command that would output to stderr or similar in that case?)
+(NOTE: if you get a non-200 response, the resulting zip file will actually be a text file containing some error text. To account for this, you may want to use [a more complicated incantation](https://github.com/whatwg/html-build/blob/0cfe5e055b6f3291bfc4222b20efc4346b456b95/build.sh#L176-L188).)
 
 ## Server Development Info
 
