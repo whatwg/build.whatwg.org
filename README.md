@@ -18,7 +18,7 @@ Currently it is located on an AWS server. You can use it as follows:
         --output output.zip
    ```
 
-The result will be a ZIP file containing the output of Wattsi!
+The result will be a ZIP file containing the output of Wattsi! It will also contain an `output.txt` file containing the stdout output of Wattsi, which might contain warnings or similar things you want to check out.
 
 (NOTE: if you get a non-200 response, the resulting zip file will actually be a text file containing some error text. To account for this, you may want to use [a more complicated incantation](https://github.com/whatwg/html-build/blob/0cfe5e055b6f3291bfc4222b20efc4346b456b95/build.sh#L176-L188).)
 
