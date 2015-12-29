@@ -22,6 +22,10 @@ The result will be a ZIP file containing the output of Wattsi! It will also cont
 
 (NOTE: if you get a non-200 response, the resulting zip file will actually be a text file containing some error text. To account for this, you may want to use [a more complicated incantation](https://github.com/whatwg/html-build/blob/0cfe5e055b6f3291bfc4222b20efc4346b456b95/build.sh#L176-L188).)
 
+### Options
+
+You can also send the query string `?quiet` to pass the `--quiet` option to Wattsi.
+
 ## Server Development Info
 
 This server requires the following to run:
