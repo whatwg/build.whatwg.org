@@ -11,21 +11,20 @@
     "lib/"
   ],
   "scripts": {
-    "lint": "eslint lib && jscs lib",
+    "lint": "eslint lib",
     "start": "forever start lib/app.js -l forever.log --append --watch"
   },
   "dependencies": {
     "child-process-promise": "^1.1.0",
-    "co-multipart": "^0.2.0",
+    "co-multipart": "^2.0.0",
     "finished": "^1.2.2",
     "forever": "^0.15.1",
-    "koa": "^1.0.0",
+    "koa": "^1.1.2",
     "mkdirp-then": "^1.1.0",
     "rimraf-then": "^1.0.0",
     "then-fs": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "0.20.0",
-    "jscs": "^1.13.1"
+    "eslint": "^1.10.3"
   }
 }
