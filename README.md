@@ -11,7 +11,7 @@ Currently it is located on an AWS server. You can use it as follows:
 1. Run the following command:
 
    ```sh
-   curl http://ec2-52-88-42-163.us-west-2.compute.amazonaws.com --verbose \
+   curl http://ec2-52-88-42-163.us-west-2.compute.amazonaws.com/wattsi --verbose \
         --form source=@source \
         --form caniuse=@caniuse.json \
         --form w3cbugs=@w3cbugs.csv \
@@ -26,7 +26,7 @@ The result will be a ZIP file containing the output of Wattsi! It will also cont
 
 This server requires the following to run:
 
-- [io.js](https://iojs.org/) 3.2.0 or later
+- [Node.js](https://nodejs.org/) 5.3.0 or later
 - [7zip](http://www.7-zip.org/) in your path as `7za`
 - And, of course, [Wattsi](https://github.com/whatwg/wattsi)
 
