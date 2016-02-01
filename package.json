@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "lint": "eslint lib",
-    "start": "forever start lib/app.js -l forever.log --append --watch"
+    "start": "forever start -l forever.log --append --watch lib/app.js"
   },
   "dependencies": {
     "child-process-promise": "^1.1.0",
