@@ -11,7 +11,7 @@ Currently it is located on an AWS server. You can use it as follows:
 1. Run the following command:
 
    ```sh
-   curl http://ec2-52-33-14-28.us-west-2.compute.amazonaws.com/wattsi --verbose \
+   curl https://build.whatwg.org.com/wattsi --verbose \
         --form source=@source \
         --form caniuse=@caniuse.json \
         --form w3cbugs=@w3cbugs.csv \
