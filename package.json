@@ -15,13 +15,13 @@
     "start": "forever start -l forever.log --append lib/app.js"
   },
   "dependencies": {
-    "child-process-promise": "^1.1.0",
+    "child-process-promise": "^2.1.3",
     "co-multipart": "^2.0.0",
     "finished": "^1.2.2",
-    "forever": "^0.15.1",
-    "koa": "^1.1.2",
+    "forever": "^0.15.2",
+    "koa": "^1.2.1",
     "koa-route": "^2.4.2",
-    "mkdirp-then": "^1.1.0",
+    "mkdirp-then": "^1.2.0",
     "rimraf-then": "^1.0.0",
     "then-fs": "^2.0.0"
   },
