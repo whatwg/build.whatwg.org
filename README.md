@@ -12,6 +12,8 @@ Currently it is located on an AWS server. You can use it as follows:
 
    ```sh
    curl https://build.whatwg.org/wattsi --verbose \
+        --form build=default \
+        --form sha=d3adb33f \
         --form source=@source \
         --form caniuse=@caniuse.json \
         --form w3cbugs=@w3cbugs.csv \
