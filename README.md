@@ -4,9 +4,7 @@ This app is a build server to allow you to run [Wattsi](https://github.com/whatw
 
 Currently it is located on an AWS server. You can use it as follows:
 
-1. Get local files:
-  1. `caniuse.json` from https://raw.githubusercontent.com/Fyrd/caniuse/master/data.json
-  1. `w3cbugs.csv` from https://www.w3.org/Bugs/Public/buglist.cgi?columnlist=bug_file_loc,short_desc&query_format=advanced&resolution=---&ctype=csv
+1. Get a local copy of `caniuse.json` from https://raw.githubusercontent.com/Fyrd/caniuse/master/data.json.
 1. Get the HTML spec source file `source` by checking out [whatwg/html](https://github.com/whatwg/html).
 1. Run the following command:
 
@@ -16,7 +14,6 @@ Currently it is located on an AWS server. You can use it as follows:
         --form sha=d3adb33f \
         --form source=@source \
         --form caniuse=@caniuse.json \
-        --form w3cbugs=@w3cbugs.csv \
         --output output.zip
    ```
 
