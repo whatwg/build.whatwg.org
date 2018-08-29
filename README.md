@@ -2,7 +2,7 @@
 
 This app is a build server to allow you to run [Wattsi](https://github.com/whatwg/wattsi) without having to actually install it locally. Which is really useful, since not everyone has a Free Pascal compiler lying around.
 
-Currently it is located on an AWS server. You can use it as follows:
+Currently it is hosted on build.whatwg.org. You can use it as follows:
 
 1. Get a local copy of `caniuse.json` from https://raw.githubusercontent.com/Fyrd/caniuse/master/data.json.
 1. Get the HTML spec source file `source` by checking out [whatwg/html](https://github.com/whatwg/html).
