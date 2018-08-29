@@ -3,18 +3,14 @@ node_js: lts/*
 
 env:
   global:
-    - ENCRYPTION_LABEL="c095909a09d8"
+    - ENCRYPTION_LABEL="9ea7ccbab3d2"
 
 branches:
   only:
     - master
 
 script:
-  - shellcheck deploy.sh
-  - npm run lint
-
-after_success:
-  - bash ./deploy.sh
+  - shellcheck deploy.sh && npm run lint && bash ./deploy.sh
 
 notifications:
   email:
