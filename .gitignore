@@ -2,3 +2,5 @@
 /npm-debug.log
 /config.json
 /forever.log
+/deploy_key
+/known_hosts
