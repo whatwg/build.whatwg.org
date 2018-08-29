@@ -16,15 +16,15 @@
   },
   "dependencies": {
     "child-process-promise": "^2.2.1",
-    "co-multipart": "^2.0.0",
     "finished": "^1.2.2",
-    "koa": "^1.2.1",
-    "koa-route": "^2.4.2",
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
     "mkdirp-then": "^1.2.0",
     "rimraf-then": "^1.0.1",
     "then-fs": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^5.4.0"
   }
 }

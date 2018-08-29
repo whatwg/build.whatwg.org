@@ -33,7 +33,7 @@ You can hit the `/ping` endpoint with a GET to check to see if the server is wor
 
 This server requires the following to run:
 
-- [Node.js](https://nodejs.org/) 5.3.0 or later
+- [Node.js](https://nodejs.org/) 8.11.4 or later
 - [7zip](http://www.7-zip.org/) in your path as `7za`
 - And, of course, [Wattsi](https://github.com/whatwg/wattsi)
 
