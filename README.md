@@ -25,7 +25,9 @@ The result will be a ZIP file containing the output of Wattsi! It will also cont
 
 ## Other Features
 
-You can send the query string `?quiet` to pass the `--quiet` option to Wattsi.
+You can send the query string parameter `quiet` to pass the `--quiet` option to Wattsi.
+
+You can send the query string paramter `single-page-only` to pass the `--single-page-only` option to Wattsi.
 
 The response will have a header, `Wattsi-Exit-Code`, which gives the exit code of Wattsi. This will always be `0` for a 200 OK response, but a 400 Bad Request could give a variety of different values, depending on how Wattsi failed.
 
