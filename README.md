@@ -4,7 +4,6 @@ This app is a build server to allow you to run [Wattsi](https://github.com/whatw
 
 Currently it is hosted on build.whatwg.org. You can use it as follows:
 
-1. Get a local copy of `caniuse.json` from <https://raw.githubusercontent.com/Fyrd/caniuse/master/data.json>.
 1. Get a local copy of `html.json` from <https://raw.githubusercontent.com/w3c/mdn-spec-links/master/html.json>.
 1. Get the HTML spec source file `source` by checking out [whatwg/html](https://github.com/whatwg/html).
 1. Run the following command:
@@ -14,7 +13,6 @@ Currently it is hosted on build.whatwg.org. You can use it as follows:
         --form build=default \
         --form sha=d3adb33f \
         --form source=@source \
-        --form caniuse=@caniuse.json \
         --form mdn=@html.json \
         --output output.zip
    ```
