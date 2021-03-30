@@ -1,0 +1,5 @@
+## Ignore everything and list only what should be included.
+**
+!lib
+!package-lock.json
+!package.json
