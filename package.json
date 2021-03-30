@@ -1,11 +1,10 @@
 {
   "private": true,
-  "name": "wattsi-build",
-  "description": "A build server for running wattsi",
-  "version": "1.0.0-pre",
+  "name": "build.whatwg.org",
+  "description": "The WHATWG build server",
   "author": "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
-  "license": "WTFPL",
-  "repository": "domenic/wattsi-build",
+  "license": "CC0",
+  "repository": "whatwg/build.whatwg.org",
   "bin": "lib/app.js",
   "files": [
     "lib/"

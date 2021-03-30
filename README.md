@@ -1,4 +1,4 @@
-# Wattsi Server
+# build.whatwg.org
 
 This app is a build server to allow you to run [Wattsi](https://github.com/whatwg/wattsi) without having to actually install it locally. Which is really useful, since not everyone has a Free Pascal compiler lying around.
 
