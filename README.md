@@ -29,7 +29,7 @@ You can send the query string paramter `single-page-only` to pass the `--single-
 
 The response will have a header, `Wattsi-Exit-Code`, which gives the exit code of Wattsi. This will always be `0` for a 200 OK response, but a 400 Bad Request could give a variety of different values, depending on how Wattsi failed.
 
-You can hit the `/ping` endpoint with a GET to check to see if the server is working. It should return the `text/plain` response `All good here`.
+You can hit the `/version` endpoint with a GET to check to see if the server is working. It should return the `text/plain` response of the latest-deployed Git commit SHA.
 
 ## Server Development Info
 
@@ -37,8 +37,15 @@ This server requires the following to run:
 
 - [Node.js](https://nodejs.org/) 11.4.0 or later
 - [7zip](http://www.7-zip.org/) in your path as `7za`
-- And, of course, [Wattsi](https://github.com/whatwg/wattsi)
+- And, of course, [Wattsi](https://github.com/whatwg/wattsi), in your `$PATH` as `wattsi`
 
-To set up the server remember to do `npm install --production`. Also, copy `config.sample.json` to `config.json` and edit things appropriately.
+It will expose itself on the port given by the `$PORT` environment variable.
 
-Then, to start it running, just do `npm start`.
+To set up the server remember to do `npm install --production`. Then, to start it running, just do `npm start`.
+
+Alternately, you can use Docker:
+
+```bash
+docker build --tag build.whatwg.org .
+docker run -p 3000:3000 --interactive --tty build.whatwg.org
+```

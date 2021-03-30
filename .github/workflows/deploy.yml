@@ -1,0 +1,40 @@
+name: Test & Deploy
+on:
+  pull_request:
+    branches:
+    - main
+  push:
+    branches:
+    - main
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 14
+    - run: npm install
+    - run: npm run lint
+  # The deploy happens on DigitalOcean, this just checks that it eventually
+  # succeeds.
+  verify-deploy:
+    name: Verify Deploy
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    needs: test
+    runs-on: ubuntu-20.04
+    steps:
+    - run: |
+        for i in {1..10}; do
+          DEPLOYED_VERSION="$(curl -s https://build.whatwg.org/version)"
+          if [[ "$DEPLOYED_VERSION" = "$GITHUB_SHA" ]]; then
+            echo "$GITHUB_SHA deploy verified!"
+            exit 0
+          fi
+          echo "$GITHUB_SHA not yet deployed, current version is $DEPLOYED_VERSION. Waiting before checking again..."
+          sleep 60
+        done
+        echo "$GITHUB_SHA not deployed after 10 minutes."
+        exit 1
+      shell: bash
