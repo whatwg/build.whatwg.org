@@ -21,6 +21,6 @@
   },
   "devDependencies": {
     "@domenic/eslint-config": "^3.0.0",
-    "eslint": "^8.28.0"
+    "eslint": "^8.31.0"
   }
 }
