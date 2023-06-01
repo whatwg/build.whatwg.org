@@ -1,4 +1,4 @@
-FROM node:18.16.0-buster-slim
+FROM node:20.2.0-buster-slim
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends p7zip-full && \
     rm -rf /var/lib/apt/lists/*
