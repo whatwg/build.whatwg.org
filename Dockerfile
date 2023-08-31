@@ -1,4 +1,4 @@
-FROM node:18.17.0-bookworm-slim
+FROM node:18.17.1-bookworm-slim
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends p7zip-full && \
     rm -rf /var/lib/apt/lists/*
@@ -9,7 +9,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install --production
+RUN npm install --omit=dev
 
 ENV PORT=3000
 
