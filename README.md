@@ -22,7 +22,7 @@ You can also send the following query string parameters, which correspond to the
 
 If the resulting status code is 200, the result will be a ZIP file containing the output, as well as an `output.txt` containing the stdout/stderr output. If the resulting status code is 400, the body text will be the error message.
 
-The response will have a header, `Wattsi-Exit-Code`, which gives the exit code of Wattsi. This will always be `0` for a 200 OK response, but a 400 Bad Request could give a variety of different values, depending on how Wattsi failed.
+The response will have a header, `Exit-Code`, which gives the exit code of Wattsi. This will always be `0` for a 200 OK response, but a 400 Bad Request could give a variety of different values, depending on how Wattsi failed.
 
 ### `/version`
 
