@@ -1,4 +1,4 @@
-FROM node:18.17.1-bookworm-slim
+FROM node:20.5.1-bookworm-slim
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends p7zip-full && \
     rm -rf /var/lib/apt/lists/*
