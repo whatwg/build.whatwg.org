@@ -10,7 +10,7 @@
     "lib/"
   ],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint",
     "start": "node lib/app.js"
   },
   "dependencies": {
@@ -20,7 +20,8 @@
     "koa-router": "^12.0.1"
   },
   "devDependencies": {
-    "@domenic/eslint-config": "^3.0.0",
-    "eslint": "^8.57.0"
+    "@domenic/eslint-config": "^4.0.1",
+    "eslint": "^9.8.0",
+    "globals": "^15.9.0"
   }
 }
