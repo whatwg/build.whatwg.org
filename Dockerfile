@@ -1,4 +1,4 @@
-FROM node:20.16.0-bookworm-slim
+FROM node:20.17.0-bookworm-slim
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends \
     ca-certificates curl p7zip-full python3 python3-pip pipx && \
