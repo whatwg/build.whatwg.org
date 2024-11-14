@@ -22,6 +22,6 @@
   "devDependencies": {
     "@domenic/eslint-config": "^4.0.1",
     "eslint": "^9.13.0",
-    "globals": "^15.9.0"
+    "globals": "^15.12.0"
   }
 }
